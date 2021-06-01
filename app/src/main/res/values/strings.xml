@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Steganography app</string>
+    <string name="encryption">encryption</string>
+    <string name="decryption">decryption</string>
+    <string name="welcome">welcome</string>
+    <string name="decrypt">decrypt</string>
+    <string name="choose_picture">choose picture</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="encrypt">encrypt</string>
+
+</resources>

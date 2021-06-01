@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:padding="8dp"
+    android:background="@color/background"
+    tools:context=".EncryptionActivity">
+
+    <Button
+        android:id="@+id/encryption_button_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/acent"
+        android:text="@string/encrypt"
+        android:textAllCaps="false"
+        android:textColor="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/encryption_edit_text_text" />
+
+
+    <EditText
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:hint=""
+        android:id="@+id/encryption_edit_text_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/encryption_radio_group" />
+
+    <RadioGroup
+        android:id="@+id/encryption_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/encryption_card">
+
+        <RadioButton
+            android:id="@+id/encryption_radio_button_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/encryption_radio_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/encryption_radio_button_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Picture"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/encryption_radio_button_apk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APK"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/encryption_text_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/choose_picture"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/encryption_card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/encryption_text_choose">
+
+        <ImageView
+            android:id="@+id/encryption_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_file_upload" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

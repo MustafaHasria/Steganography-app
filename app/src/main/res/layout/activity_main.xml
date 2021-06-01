@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/main_button_decryption"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/acent"
+        android:text="@string/decryption"
+        android:textAllCaps="false"
+        android:textColor="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_button_encryption"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/acent"
+        android:text="@string/encryption"
+        android:textAllCaps="false"
+        android:textColor="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="to decrypt text with image, file, pdf, text"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/main_button_decryption"
+        app:layout_constraintTop_toBottomOf="@id/main_button_decryption" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="to encrypt image with image, file, pdf, text"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/main_button_encryption"
+        app:layout_constraintTop_toBottomOf="@id/main_button_encryption" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
